@@ -1,9 +1,11 @@
+import Banner from "./components/Banner";
+
 function App() {
   return (
     <>
-      <h1>Luz e Cena</h1>
+      <Banner src="/images/banner.png" alt="Banner do Luz e Cena" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
