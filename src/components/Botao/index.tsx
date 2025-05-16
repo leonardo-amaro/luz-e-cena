@@ -1,0 +1,21 @@
+import React from "react";
+import styles from "./Botao.module.css";
+
+type BotaoProps = {
+  variant: "default" | "icon";
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+const Botao = ({ children, variant = "default", ...rest }: BotaoProps) => {
+  const classMap = {
+    default: styles.default,
+    icon: styles.icon,
+  }
+
+  return (
+    <button className={styles.botao} {...rest}>
+      {children}
+    </button>
+  );
+}
+
+export default Botao;
