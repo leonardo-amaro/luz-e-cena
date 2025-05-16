@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from "classnames";
 import styles from "./Botao.module.css";
 
 type BotaoProps = {
@@ -12,7 +13,7 @@ const Botao = ({ children, variant = "default", ...rest }: BotaoProps) => {
   }
 
   return (
-    <button className={styles.botao} {...rest}>
+    <button className={classNames(styles.botao, classMap[variant])} {...rest}>
       {children}
     </button>
   );
