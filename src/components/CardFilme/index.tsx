@@ -1,18 +1,6 @@
 import styles from "./CardFilme.module.css";
 import Tag from "../Tag";
-
-type Categoria = "2D" | "3D";
-type Censura = "Livre" | "10 anos" | "12 anos" | "14 anos" | "16 anos";
-
-interface CardFilmeProps {
-  src: string;
-  alt: string;
-  titulo: string;
-  genero: string;
-  categoria: Categoria;
-  duracao: number;
-  censura: Censura;
-}
+import type { Filme } from "../../types";
 
 const CardFilme = ({
   src,
@@ -22,7 +10,7 @@ const CardFilme = ({
   categoria,
   duracao,
   censura
-}: CardFilmeProps) => {
+}: Filme) => {
   return (
     <li className={styles.card}>
       <img src={src} alt={alt} />
