@@ -10,7 +10,7 @@ const Cabecalho = () => {
     <header>
       <CabecalhoLista>
         <CabecalhoListaItem>
-          <Logo src="/Logo.png" alt="Logo do Luz e Cena." />
+          <Logo src="/logo.png" alt="Logo do Luz e Cena." />
         </CabecalhoListaItem>
         <CabecalhoListaItem>
           <CabecalhoLinks />
